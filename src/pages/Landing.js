@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import background from '../content/background.jpg';
+import { NavLink } from 'react-router-dom';
 
 class Landing extends React.Component {
     render() {
@@ -18,7 +19,7 @@ class Landing extends React.Component {
                     <Typography variant='subtitle1' style={{color: 'white'}}>
                         Saving the planet. One home at a time.
                     </Typography><br/>
-                    <Button variant="contained" color="primary">
+                    <Button variant="contained" color="primary" component={NavLink} to="/story">
                         Learn More
                     </Button>
                 </Grid>

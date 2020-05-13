@@ -1,15 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Landing from './pages/Landing';
+import Story from './pages/Story';
 import './App.css';
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <Navbar/>
-      <Landing/>
+      <Switch>
+      <Route path="/" exact component={Landing}/>
+      <Route path="/story" component={Story}/>
+      </Switch>
     </div>
+    </Router>
   );
 }
 
