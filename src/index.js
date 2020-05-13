@@ -5,11 +5,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import purple from '@material-ui/core/colors/purple';
-import green from '@material-ui/core/colors/green';
+import green from '@material-ui/core/colors/amber';
 
 const theme = createMuiTheme({
   palette: {
-    primary: green,
+    primary: {
+      main: '#c8e6c9'
+    },
     secondary: purple
   }
 });
