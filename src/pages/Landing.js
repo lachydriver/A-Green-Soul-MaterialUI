@@ -13,7 +13,8 @@ class Landing extends React.Component {
             <div>
             <Grid container alignItems="center" justify="center" style={{
                 height: '100vh',
-                backgroundImage: `url(${background})`
+                backgroundImage: `url(${background})`,
+                backgroundSize: 'cover'
             }}>
                 <Grid item>
                     <Typography variant='h1' style={{color: 'white'}}>
